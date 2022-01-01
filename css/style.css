@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+.navbar{
+    background-color: #2c3e50 !important;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+}
+.navbar a{
+    color: white !important;
+    margin-left: 4px !important;
+    transition: all .5s;
+    overflow: hidden !important;
+    position: relative;
+    
+}
+.title-section{
+    color: rgb(207, 63, 10) ;
+    font-weight: 600;
+}
+
+.navbar a:hover{
+   background-color: orangered;
+   border-radius: 10px;
+}
+
+.navbar a.active{
+    background-color: orangered;
+    /* border-radius: 15px; */
+ }
+
+.slider{
+    width: 100%;
+    position: relative;
+    /* background-color: #2179d1; */
+
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+.slider-img{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    height: 100vh;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(46, 44, 44,60%);
+    z-index: 1;
+
+}
+
+.pagnition-slider{
+    position: absolute;
+    bottom: 70px;
+    z-index: 2;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagnition-content{
+    display: none;
+}
+
+
+.slider:hover .pagnition-content{
+    display: block;
+}
+
+.pagnition-slider ul{
+    display: flex;
+    justify-content: center;
+}
+.pagnition-slider ul li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    margin-left: 4px;
+}
+
+.pagnition-slider ul li.active{
+    border: 2px solid white;
+   
+}
+.recipe{
+    width: 90%;
+    /* height: 220px; */
+    margin: auto;
+    background-color: white;
+  box-shadow:   0 0rem 1rem rgba(0,0,0,36.175)!important;
+  border: 1px solid gray;
+  overflow: hidden;
+ 
+}
+
+.recipe:hover .title-recipe{
+    box-shadow:   0 0 0 200px #16a085;
+}
+.recipe:hover .info-recipe{
+  color: white; 
+}
+.title-recipe{
+    position: relative;
+    background-color: #0eb493;
+    color: white;
+    width: 80%;
+    border-radius: 20%;
+    transition: all .5s;
+}
+.info-recipe{
+    position: relative;
+    /* z-index: 2; */
+      
+}
+
+
+.secrets{
+    width: 90%;
+
+}
+.title-secret{
+    color: #0eb493;
+   
+}
+.food-meals{
+    width: 90%;
+     height: 180px !important;
+}
+.meals-ul li.active{
+   background-color: orangered;
+   color: white;
+  }
+  .meals-ul li:hover{
+    background-color: orangered;
+    color: white;
+   }
+.static{
+    width: 95%;
+
+}
+
+.img-tips{
+    width: 95% ;
+   display: none;
+}
+
+.tips-p{
+display: none;
+position: relative;
+}
+.tips-p::after{
+    content: "";
+    width: 17px;
+    height: 17px;
+    border: 1px solid blue;
+    position: absolute;
+    top: 7px;
+    left: -16px;
+    }
+
+.tips-p::before{
+content: "✔";
+position: absolute;
+top: 2px;
+left: -19px;
+
+}
+
+.scroll-top{
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: orangered;
+    display: none;
+
+}
